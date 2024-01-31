@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.name-logo{
+    height: 200px;
+    margin-left: 150px;
+}
+
+body{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+button{
+    background-color: #c7c7c7;
+    color: #492faa;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(116, 65, 158);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 200px;
+}
+
+button:hover{
+    background-color: #c4b4ff;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+.super-shock-body{
+    height: 400px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+}
+
+.box-left{
+    width: 50%;
+    margin-bottom: 200px;
+}
+
+.box-video{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    left: -25px;
+    z-index: -2;
+}
+
+.mask{
+    height: 100%;
+    width: 120%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0;
+    max-width: 600px;
+}
+
+.link-whatsapp img{
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.link-whatsapp img:hover{
+    padding: 4px;
+    transition: 0,2s ease-in-out;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+.header img{
+    height: 70px;
+}
+
+.header a{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header a:hover{
+    color: #6853b4;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.header a:active{
+    transition: none;
+    color: #c7b7ff;
+}
+
+.form-pop-up {
+    width: 450px;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -450px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-pop-up button{
+    transform: translateX(-50%);
+}
+
+.close-pop-up{
+    background-color: transparent;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #654cbe;
+}
+
+.close-pop-up:hover{
+        background-color: #c4b4ff;
+        color: white;
+        border: 0,5px solid #928bac;
+    }
+
+    .services-form {
+        width: 450px;
+        background-color: white;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        position: fixed;
+        top: 30%;
+        left: -450px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 5px solid #6010c9;
+    }
+
+    .services-form a{
+        position: relative;
+        margin: 2px auto;
+        font-size: 30px;
+        color: #400e83;
+        font-weight: bold;
+    }
+
+    .services-form ul{
+        font-size: 20px;
+        color: #6010c9;
+        font-weight: bold;
+        margin: 20px 0px 0px 30px;
+    }
+
+    .services-form li{
+        color: black;
+    }
+
+    .services-form button{
+    transform: translateX(-50%);
+    }
+
+input{
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #928bac;
+    padding-left: 5px;
+    outline-color: #6853b4;
+    position: relative;
+    top: 15px;
+}
+
+textarea{
+    height: 130px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #928bac;
+    padding-left: 5px;
+    outline-color: #6853b4;
+    position: relative;
+    top: 15px;
+}
+
+.mask-form{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+/*
+inicial:
+    top: 30%;
+    left: -450px;
+
+final:
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .box-video{
+    position: fixed;
+    top: 0;
+    left: -25px;
+    z-index: -2;
+*/
+
+@media(max-width: 1100px) {
+
+    p{
+        display: none;
+    }
+
+    .box-main{
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    
+    .box-left{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-right{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .super-shock-body{
+        width: 80vw;
+        height: auto;
+        margin: 0;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .header{
+        margin: 30px 10px;
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header a{
+        font-size: 20px;
+    }
+
+    .name-logo{
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    button{
+        margin: 30px 0;
+    }
+
+    .box-left{
+        width: 50%;
+        margin-bottom: 0px;
+        }
+
+        .form-pop-up{
+            width: 300px;
+        }
+
+        .form-pop-up button{
+            transform: translateX(15%);
+        }
+
+        .services-form{
+            width: 300px;
+        }
+
+        .services-form button{
+            transform: translateX(15%);
+        }
+}

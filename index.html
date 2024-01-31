@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Super-Shock Eletrician</title>
+</head>
+<body>
+
+    <div class="mask-form"></div>
+
+    <div class="header">
+        <img src="./assets/img/logo-header.png" alt="logo super shock">
+        <a href="./index.html">Home</a>
+        <a onclick="clickservices ()">Services</a>
+        <a onclick="clickbutton ()">Contact us</a>
+    </div>
+
+    <div class="box-main">
+
+        <div class="box-left">
+            <img class="name-logo" src="./assets/img/static-shock-name.png" alt="letter static shock">
+            <p id="p=top">⚡️ Need reliable electrical services? We're here for you! ⚡️</p>
+            <p id="p-bottom">We offer fast and safe solutions for installation, maintenance and electrical repairs.
+                Our qualified team guarantees personalized service and competitive prices.
+                When you contact us, get a special discount on your first service.</p>
+            <button onclick="clickbutton ()">Contact Us</button>
+    
+        </div>
+
+        <div class="box-right">
+            <img class="super-shock-body" src="./assets/img/super-shock.png" alt="super chock boneco">
+        </div>
+
+    </div>
+
+
+    <div class="box-video">
+        <video src="./assets/vid/video-background.mp4" autoplay muted loop></video>
+            <div class="mask"></div>
+    </div>
+
+    <a class="link-whatsapp" href="https://api.whatsapp.com/send/?phone=11980028922&text&type=phone_number&app_absent=0" target="_blank"> 
+        <img src="./assets/img/whatsapp.png" alt="logo whatsapp">
+    </a>
+
+    <form 
+        class="form-pop-up"
+        action="https://formcarry.com/s/74C9NqqlQBZ"
+        method="POST"
+        enctype="multipart/form-data">
+
+            <a class="close-pop-up" onclick="clicktoclose ()">X</a>
+        <input placeholder="Full name" type="text" name="insertname">
+        <input placeholder="Phone number" type="tel" name="insertphone">
+        <textarea placeholder="Type your problem here..." name="insertproblem"></textarea>
+        <button class="button-pop-up" type="submit">Request</button>
+    </form>
+
+    <form class="services-form">
+        <a>
+            Services:
+        </a>
+        <ul>
+            <li>Residential electrical installation</li>
+            <li>Electrical repairs</li>
+            <li>Preventive maintenance</li>
+            <li>Electrical panels</li>
+            <li>Lighting</li>
+            <li>Security systems</li>
+            <li>Electrical upgrades</li>
+        </ul>
+        <button class="services-close" onclick="closeservices ()">Close</button>
+    </form>
+
+</body>
+
+    <script src="./scripts.js"></script>
+
+</html>
